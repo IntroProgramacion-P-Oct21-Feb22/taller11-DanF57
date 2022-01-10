@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Generar un procedimiento (método que no devuelva valor) 
+que imprima los valor pares de un arreglo bidimensional.
+El procedimiento o método debe se invocado desde el método main (principal); 
+además el método debe recibir como parámetro un arreglo bidimensional.
  */
 package problemas;
 
@@ -20,7 +21,12 @@ public class Problema1 {
     }
     
     public static void imprimirDatos(int[][] datos){
-    
+        for (int i = 0; i < datos.length; i++) {
+            for (int j = 0; j < datos[i].length; j++) {
+                System.out.printf("%d ",datos[i][j]);
+            }
+            
+        }
     }
     
 }
